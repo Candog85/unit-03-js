@@ -15,10 +15,11 @@
     </button>
 
     <script>
-        let hex = ("#" + Math.floor(Math.random() * 1000000))
+        
 
         function randombg() {
-            document.body.style.backgroundColor = ("#" + hex)
+            let hex = ("#" + Math.floor(Math.random() * 1000000))
+            document.body.style.backgroundColor =  hex
             console.log(hex)
         }
     </script>
