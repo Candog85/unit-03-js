@@ -10,8 +10,6 @@
 
 <body>
 
-    <center>
-
         <h1>
             Bleach MadLibs!
         </h1>
@@ -36,22 +34,24 @@
 
         <button onclick="madlib()"> Submit </button>
 
-        <h1 id="madoutput">
+        <h1>
+            <span id="madoutput"></span>
         </h1>
-
-    </center>
 
     <script>
 
+        let nameinput = document.getElementById("nameinput")
+        let nouninput = document.getElementById("nouninput")
+        let adjectiveinput = document.getElementById("adjectiveinput")
+        let colorinput = document.getElementById("colorinput")
+        let adjectiveinput2 = document.getElementById("adjectiveinput2")
+        let nouninput2 = document.getElementById("nouninput2")
+        let madoutput = document.getElementById("madoutput")
+
         function madlib() {
-            let nameinput = document.getElementById(nameinput)
-            let nouninput = document.getElementById(nouninput)
-            let adjectiveinput = document.getElementById(adjectiveinput)
-            let colorinput = document.getElementById(colorinput)
-            let adjectiveinput2 = document.getElementById(adjectiveinput2)
-            let nouninput2 = document.getElementById(nouninput2)
-            
-            madoutput.innerText=("It's over "+nameinput.value+". I will finally have full control of the "+nouninput.value+" society! You thought that you would win, but your plan failed terribly. Now, gaze upon my Bankai, i'm sure you'll find it "+adjective+". Its sharp "+color+" blade will cut you down where you stand! Bankai, "+adjective2+" "+noun2)
+            madoutput.innerText=("It's over " + nameinput.value + ". I will finally have full control of the " + nouninput.value + " society! You thought that you would win, but your plan failed terribly. Now, gaze upon my Bankai, i'm sure you'll find it " + adjectiveinput.value + ". Its sharp " + colorinput.value + " blade will cut you down where you stand! Bankai, " + adjectiveinput2.value + " " + nouninput2.value)
+            madoutput
+            madoutput.innerText="yuh"
         }
 
     </script>
